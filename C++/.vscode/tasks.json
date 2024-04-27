@@ -3,14 +3,15 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "Build with GCC 11.4.0",
-			"command": "/usr/bin/g++",
+			"label": "Build with GCC 13",
+			"command": "/usr/bin/g++-13",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
-				"${file}",
+				"-std=c++23",
+				"${workspaceFolder}/*.cpp",
 				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}"
+				"${fileDirname}/rooster"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
@@ -19,7 +20,7 @@
 				"$gcc"
 			],
 			"group": "build",
-			"detail": "compiler: /usr/bin/g++"
+			"detail": "compiler: /usr/bin/g++-13"
 		}
 	]
 }
