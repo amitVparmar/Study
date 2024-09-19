@@ -1,7 +1,7 @@
 //This brings IOSTREAM library
 #include <iostream>
 
-consteval int get_value(){
+int get_value(){
     return 3;
 }
 //Main function is the entry point of the program
@@ -12,7 +12,7 @@ int main(){
 
     //runtime error
     //int i = 7/0;
-    //std::cout << i << std::endl; //Error message : Floating point exception (core dumped)
+    //std::cout << "value : " << i << std::endl; //Error message : Floating point exception (core dumped)
 
     return 0;
 }
